@@ -41,6 +41,12 @@ footer{
     min-height: 7vh;
 }
 
+.ecommerce-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .categories{
     display: flex;
     flex-direction: column;
@@ -57,7 +63,7 @@ footer{
 
 .grid-products{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     padding: 20px;
     gap: 50px;
     justify-content: space-around;
@@ -67,4 +73,10 @@ footer{
     width: 280px;
     height: 350px;
     background-color: black;
+}
+
+.ecommerce-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
