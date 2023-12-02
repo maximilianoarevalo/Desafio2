@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
 }
 
 .grid-container{
@@ -10,36 +13,38 @@
     "header header"
     "menu main"
     "footer footer";
-    /* gap: 10px; */
-    grid-template-columns: 150px 1fr;
 }
     
 
 header{
     grid-area: header;
-    background-color: rgb(47, 47, 128);
+    background-color: #002c53;
     min-height: 7vh;
+    color: white;
 }
     
 menu{
     grid-area: menu;
-    background-color: rgb(187, 187, 187);
+    background-color: #fbe1e1;
     min-height: 86vh;
     width: auto;
-    border-right: 1px solid black;
+    padding-top: 20px;
 }
     
 main{
     grid-area: main;
-    background-color: rgb(187, 187, 187);
+    background-color: #fbe1e1;
     min-height: 86vh;
     width: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
     
 footer{
     grid-area: footer;
-    background-color: rgb(255, 255, 255);
+    background-color: #002c53;
     min-height: 7vh;
+    color: white;
 }
 
 .ecommerce-title{
@@ -68,54 +73,77 @@ footer{
     padding: 10px;
     gap: 50px;
 }
-
-.products-product{
-    background-color: black;
-}
-
 .product-card{
-    background-color: red;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 90%;
 }
 
 .product-card img{
-    width: 100%;
-    height: auto;
-    min-height: 300px;
-    padding-bottom: 20px;
+    width: 60%;
+    height: 100%;
+    padding-bottom: 25px;
 }
 
 .product-name{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-weight: 600;
     font-size: 18px;
 }
 
 .product-price{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-weight: 500;
     font-size: 15px;
 }
 
 .product-buy{
     width: 100%;
-    height: 4vh;
-    background-color: blue;
+    height: 8vh;
+    background-color: #002c53;
     color: white;
-    transition-duration: 0.4s;
+    transition-duration: 0.5s;
     border: none;
+    font-size: 20px;
 }
 
 .product-buy:hover{
-    background-color: black;
-    color: yellow;
+    background-color: #004378;
+    color: #fafafa;
+    cursor: pointer;
 }
 
 .ecommerce-footer{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+}
+
+.ecommerce-footer-title{
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+
+.ecommerce-footer .ecommerce-footer-icons{
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+.ecommerce-footer .fa-brands{
+    padding-right: 20px;
+    color: white;
+}
+
+.ecommerce-footer .footer-copyright{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.ecommerce-footer .footer-copyright .footer-copyright-url{
+    color: white !important;
+    text-decoration: none !important;
 }
