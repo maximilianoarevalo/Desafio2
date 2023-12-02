@@ -24,7 +24,7 @@ menu{
     grid-area: menu;
     background-color: rgb(187, 187, 187);
     min-height: 86vh;
-    width: 20vw;
+    width: auto;
     border-right: 1px solid black;
 }
     
@@ -39,4 +39,18 @@ footer{
     grid-area: footer;
     background-color: rgb(255, 255, 255);
     min-height: 7vh;
+}
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.categories .categories-title{
+    padding-bottom: 1vh;
+}
+
+.categories .categories-category{
+    padding-bottom: 0.3vh;
 }
