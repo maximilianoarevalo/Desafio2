@@ -61,10 +61,23 @@ footer{
 
 .categories .categories-title{
     padding-bottom: 1vh;
+    font-weight: 600;
 }
 
 .categories .categories-category{
     padding-bottom: 0.3vh;
+    font-weight: 300;
+}
+
+
+.categories .categories-category:hover{
+    padding-bottom: 0.3vh;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.categories .categories-category .categories-stock{
+    color: #706f6f;
 }
 
 .grid-products{
@@ -139,7 +152,7 @@ footer{
 }
 
 .ecommerce-footer .footer-copyright{
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 400;
 }
 
