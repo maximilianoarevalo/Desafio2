@@ -24,7 +24,7 @@ menu{
     grid-area: menu;
     background-color: rgb(187, 187, 187);
     min-height: 86vh;
-    width: auto;
+    width: 10vw;
     border-right: 1px solid black;
 }
     
@@ -32,7 +32,7 @@ main{
     grid-area: main;
     background-color: rgb(187, 187, 187);
     min-height: 86vh;
-    width: 80vw;
+    width: 90vw;
 }
     
 footer{
@@ -53,4 +53,18 @@ footer{
 
 .categories .categories-category{
     padding-bottom: 0.3vh;
+}
+
+.grid-products{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 20px;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+.products-product{
+    width: 280px;
+    height: 350px;
+    background-color: black;
 }
